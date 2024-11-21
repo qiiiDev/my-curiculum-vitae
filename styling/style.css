@@ -1,0 +1,225 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #240909;
+  color: white;
+}
+
+.container1 {
+  border-radius: 12px;
+  position: relative;
+  background-size: cover;
+  background-position: 0px -750px;
+  background-image: url(../img/sss.jpg);
+  background-repeat: no-repeat;
+  width: 900px;
+  background-color: #e4c59e;
+  margin: auto;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-utama {
+  display: flex;
+  align-items: center;
+}
+.button-to-contact {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.button-to-contact button {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(175, 130, 96, 0.1);
+  box-shadow: 0 0 4px 0 black;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 8px;
+  border-radius: 10px;
+}
+
+.button-to-contact button:hover {
+  background-color: transparent;
+  margin-top: 2px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px 0 black;
+}
+
+.header-navigation .logo-web {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: antiquewhite;
+  background-size: cover;
+  background-image: url("../img/backround.jpg");
+  border-radius: 50%;
+}
+.wkwk,
+.item {
+  border-radius: 0 0 12px 12px;
+  box-sizing: border-box;
+}
+.dropdown {
+  border-radius: 12px;
+}
+.underline {
+  border-radius: 50%;
+}
+:root {
+  --color-primary: rgba(0, 0, 0, 0.3);
+}
+
+.wkwk {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  display: flex;
+  width: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+.wkwk .item {
+  font-size: 1rem;
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+  z-index: 5;
+  min-width: 25%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.dropdown {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 62px;
+}
+.dropdown > div {
+  transform: translate(0, -100%);
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: var(--color-primary);
+}
+
+.dropdown a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.underline {
+  height: 6px;
+  background: var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  width: 25%;
+  z-index: 2;
+  pointer-events: none;
+  transition: 0.35s;
+}
+
+.wkwk .item:hover > .dropdown > div {
+  transform: translate(0);
+}
+
+.wkwk .item:nth-child(1):hover ~ .underline {
+  transform: translate(0, 0);
+}
+
+.wkwk .item:nth-child(2):hover ~ .underline {
+  transform: translate(100%, 0);
+}
+
+.wkwk .item:nth-child(3):hover ~ .underline {
+  transform: translate(200%, 0);
+}
+
+.wkwk .item:nth-child(4):hover ~ .underline {
+  transform: translate(300%, 0);
+}
+.button-to-contact .logo-telpon {
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  background: url("../img/pp-removebg-preview.png") transparent;
+  background-size: 20px 20px;
+  box-shadow: 0 0 4px 0 black;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pengenalan-awal {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.isi-pengenalan {
+  align-items: center;
+}
+.foto-profil {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.foto-profil {
+  background-color: burlywood;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/ella3-removebg-preview.png");
+}
+.isinya p,
+h2 {
+  margin: 0px;
+}
+/* batas container1 */
+.container2 {
+  display: grid;
+  grid-template-areas: "foto2 makan";
+  border-radius: 12px;
+  width: 900px;
+  background-color: #53432e;
+  margin: 20px auto;
+}
+.fotoku {
+  text-align: center;
+  align-items: center;
+  grid-area: "foto2";
+  box-shadow: 0 0 10px 0 black;
+}
+.fotoku img {
+  width: 60%;
+}
+.tentangku {
+  margin: 50px;
+  grid-area: "makan";
+  align-items: center;
+  justify-content: center;
+  line-height: 120%;
+}
+a,
+.item {
+  text-decoration: none;
+  color: beige;
+}
